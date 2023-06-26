@@ -1,10 +1,22 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <Navigation/>
+  <People/>
+  <Footer/>
+  
 </template>
+
+<script>
+import Navigation from '@/components/Navigation.vue'
+import People from '@/components/People.vue'
+import Footer from '@/components/Footer.vue'
+export default {
+  components: {
+    Navigation,
+    People,
+    Footer
+  }
+}
+</script>
 
 <style>
 #app {
